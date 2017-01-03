@@ -59,6 +59,12 @@ public class SignupFragment extends Fragment implements SignupContract.View {
     }
 
     private void onSignUpClicked() {
-        presenter.doRegister("a", "b", "c");
+
+        signUpBinding.btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.doRegister("a", "b", "c");
+            }
+        });
     }
 }

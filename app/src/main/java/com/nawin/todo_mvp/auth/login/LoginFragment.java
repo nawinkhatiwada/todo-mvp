@@ -65,7 +65,7 @@ public class LoginFragment extends Fragment implements LoginContract.View {
         loginBinding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MVPBus.getInstance().post(new AuthEvents());
+                MVPBus.getInstance().post(new AuthEvents.SignupRequest());
             }
         });
 

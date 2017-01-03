@@ -42,6 +42,15 @@ public class AuthActivity extends AppCompatActivity  {
         MVPBus.getInstance().unregister(this);
     }
 
+    @Override
+    public void onBackPressed() {
+        if (getSupportFragmentManager().findFragmentById(R.id.mainContainer) instanceof SignupFragment) {
+            requestLogin(null);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
     @Subscribe
     public void requestLogin(AuthEvents.LoginRequest events) {
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.mainContainer);
