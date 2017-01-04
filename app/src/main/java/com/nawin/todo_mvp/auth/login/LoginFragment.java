@@ -30,18 +30,6 @@ public class LoginFragment extends Fragment implements LoginContract.View {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        MVPBus.getInstance().register(this);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        MVPBus.getInstance().unregister(this);
-    }
-
-    @Override
     public void showLoginProgress() {
 
     }
@@ -65,7 +53,7 @@ public class LoginFragment extends Fragment implements LoginContract.View {
         loginBinding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MVPBus.getInstance().post(new AuthEvents.SignupRequest());
+              presenter.openRegister();
             }
         });
 

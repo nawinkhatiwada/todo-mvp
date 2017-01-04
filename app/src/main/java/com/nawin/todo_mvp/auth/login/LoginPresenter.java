@@ -1,5 +1,8 @@
 package com.nawin.todo_mvp.auth.login;
 
+import com.nawin.todo_mvp.MVPBus;
+import com.nawin.todo_mvp.auth.AuthEvents;
+
 /**
  * Created by nawin on 1/3/17.
  */
@@ -24,6 +27,6 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void openRegister() {
-
+        MVPBus.getInstance().post(new AuthEvents.SignupRequest());
     }
 }
