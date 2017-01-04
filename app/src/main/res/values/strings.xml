@@ -4,4 +4,6 @@
     <string name="sign_up">Sign Up</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
+    <string name="product_id">Product ID:</string>
+    <string name="product_name">Product Name:</string>
 </resources>
