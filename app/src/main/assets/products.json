@@ -1,0 +1,31 @@
+{
+  "status": 1,
+  "statusMessage": "success",
+  "data": [
+    {
+      "productID": 1,
+      "productName": "Sony Cyberset 2X0005R",
+      "productImage": "http://lorempixel.com/400/200/"
+    },
+    {
+      "productID": 2,
+      "productName": "Asus GenFon 34ERX2",
+      "productImage": "https://avatars1.githubusercontent.com/u/12946422?v=3&u=c43fa76dffa7d93ae12300cfd976c651eed953c3&s=400"
+    },
+    {
+      "productID": 3,
+      "productName": "Micromax Bolt Q38",
+      "productImage": "http://lorempixel.com/400/200/sports/nabin/"
+    },
+    {
+      "productID": 4,
+      "productName": "LeEco Le(2) 32 GB",
+      "productImage": "http://lorempixel.com/400/200/sports/sashi/"
+    },
+    {
+      "productID": 5,
+      "productName": "Philips QT 34RTS#1",
+      "productImage": "http://lorempixel.com/400/200/sports/1/subhash/"
+    }
+  ]
+}
