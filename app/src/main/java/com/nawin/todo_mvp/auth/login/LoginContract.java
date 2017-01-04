@@ -20,5 +20,6 @@ public interface LoginContract {
     interface Presenter extends BasePresenter {
         void doLogin(String username, String password);
         void openRegister();
+        void openMain();
     }
 }

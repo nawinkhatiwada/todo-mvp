@@ -9,4 +9,7 @@ public class AuthEvents {
     public static class LoginRequest{}
 
     public static class SignupRequest{}
+
+    public static class LoginSuccess {
+    }
 }

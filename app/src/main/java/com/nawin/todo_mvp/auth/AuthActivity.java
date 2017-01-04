@@ -1,5 +1,6 @@
 package com.nawin.todo_mvp.auth;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,7 @@ import com.nawin.todo_mvp.auth.signup.SignupContract;
 import com.nawin.todo_mvp.auth.signup.SignupFragment;
 import com.nawin.todo_mvp.auth.signup.SignupPresenter;
 import com.nawin.todo_mvp.databinding.ActivityAuthBinding;
+import com.nawin.todo_mvp.main.MainActivity;
 import com.squareup.otto.Subscribe;
 
 public class AuthActivity extends AppCompatActivity  {
@@ -71,5 +73,11 @@ public class AuthActivity extends AppCompatActivity  {
                     .commit();
         }
         new SignupPresenter((SignupContract.View) fragment);
+    }
+
+    @Subscribe
+    public void openMain(AuthEvents.LoginSuccess success){
+        Intent mainIntent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(mainIntent);
     }
 }

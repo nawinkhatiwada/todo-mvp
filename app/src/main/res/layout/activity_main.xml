@@ -7,17 +7,10 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-
-        <Button
-            android:id="@+id/btnLogin"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/login"/>
+            android:layout_height="match_parent" />
 
-        <Button
-            android:id="@+id/btnSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_up"/>
     </LinearLayout>
 </layout>
