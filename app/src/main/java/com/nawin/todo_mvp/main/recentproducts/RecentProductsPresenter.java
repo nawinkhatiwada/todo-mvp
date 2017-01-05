@@ -83,11 +83,11 @@ public class RecentProductsPresenter implements RecentProductsContract.Presenter
 
     }
 
-
     @Override
-    public void onRecentProductsSelected(RecentProducts products) {
-
+    public void onRecentProductsSelected(RecentProducts products, int position) {
+        view.showToastMessage(position);
     }
+
 
     private String loadJSONFromAsset() {
         String json;
@@ -104,4 +104,6 @@ public class RecentProductsPresenter implements RecentProductsContract.Presenter
         }
         return json;
     }
+
+
 }

@@ -39,7 +39,7 @@ public class RecentProductsAdapter extends RecyclerView.Adapter<RecentProductsAd
         holder.binding.cardProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.onRecentProductsSelected(products.get(position));
+                listener.onRecentProductsSelected(products.get(position),position);
             }
         });
     }

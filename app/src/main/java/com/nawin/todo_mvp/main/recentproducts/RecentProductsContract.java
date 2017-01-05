@@ -22,6 +22,8 @@ public interface RecentProductsContract {
         void showLoadingError();
 
         Context getContext();
+
+        void showToastMessage(int position);
     }
 
     interface Presenter extends BasePresenter,RecentProductsActionListener {
@@ -31,6 +33,6 @@ public interface RecentProductsContract {
     }
 
     interface RecentProductsActionListener{
-        void onRecentProductsSelected(RecentProducts products);
+        void onRecentProductsSelected(RecentProducts products, int position);
     }
 }

@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.nawin.todo_mvp.R;
 import com.nawin.todo_mvp.data.models.RecentProducts;
@@ -54,6 +55,11 @@ public class RecentProductsFragment extends Fragment implements RecentProductsCo
     @Override
     public void showLoadingError() {
         progressDialog.dismiss();
+    }
+
+    @Override
+    public void showToastMessage(int position) {
+        Toast.makeText(getActivity(), "Item Clicked at position: " + position, Toast.LENGTH_LONG).show();
     }
 
     @Override
