@@ -1,5 +1,7 @@
 package com.nawin.todo_mvp.main.recentproducts;
 
+import android.content.Context;
+
 import com.nawin.todo_mvp.BasePresenter;
 import com.nawin.todo_mvp.BaseView;
 import com.nawin.todo_mvp.data.models.RecentProducts;
@@ -15,9 +17,11 @@ public interface RecentProductsContract {
     interface View extends BaseView<Presenter> {
         void showLoadingProgress();
 
-        void showLoadingSuccess();
+        void showRecentProducts(List<RecentProducts> products);
 
         void showLoadingError();
+
+        Context getContext();
     }
 
     interface Presenter extends BasePresenter,RecentProductsActionListener {

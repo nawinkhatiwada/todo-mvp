@@ -51,7 +51,7 @@
                     android:layout_marginLeft="@dimen/card_margin"
                     android:layout_marginStart="@dimen/card_margin"
                     android:layout_toRightOf="@+id/tvProductId"
-                    android:text="@{recentProduct.productID}"
+                    android:text="@{String.valueOf(recentProduct.productID)}"
                     android:textColor="@color/cardview_dark_background" />
 
                 <TextView
@@ -68,7 +68,8 @@
                     android:layout_below="@+id/productId"
                     android:layout_marginLeft="@dimen/card_margin"
                     android:layout_marginStart="@dimen/card_margin"
-                    android:layout_toRightOf="@+id/tvProductName"
+                    android:textColor="@color/cardview_dark_background"
+                android:layout_toRightOf="@+id/tvProductName"
                     android:text="@{recentProduct.productName}" />
 
             </RelativeLayout>
