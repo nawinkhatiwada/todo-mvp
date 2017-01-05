@@ -7,8 +7,8 @@ package com.nawin.todo_mvp.data.models;
 public class RecentProducts {
 
     private int productID;
-    private int productName;
-    private int productImage;
+    private String productName;
+    private String productImage;
 
     public int getProductID() {
         return productID;
@@ -18,19 +18,19 @@ public class RecentProducts {
         this.productID = productID;
     }
 
-    public int getProductName() {
+    public String getProductName() {
         return productName;
     }
 
-    public void setProductName(int productName) {
+    public void setProductName(String productName) {
         this.productName = productName;
     }
 
-    public int getProductImage() {
+    public String getProductImage() {
         return productImage;
     }
 
-    public void setProductImage(int productImage) {
+    public void setProductImage(String productImage) {
         this.productImage = productImage;
     }
 }
